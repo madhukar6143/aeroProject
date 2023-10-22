@@ -1,0 +1,154 @@
+{ "manufactures_db":[{
+  "Name": "ABC Manufacturing",
+  "ContactInformation": {
+    "Email": "contact@abcmanufacturing.com",
+    "Phone": "+1234567890",
+    "Address": "123 Main St, City, Country",
+    "location":"acd"
+  },
+  "BankAccount": {
+    "AccountNumber": "12345678",
+    "Cash":100000
+  },
+  "ProductsManufactured": [
+    {
+      "BookID": "book1_id",
+      "BookTitle": "Book 1",
+      "price":1000,
+      "quantity":10000
+    },
+    {
+      "BookID": "book2_id",
+      "BookTitle": "Book 2",
+      "price":1000,
+      "quantity":10000
+    }
+  ]
+},
+{
+    "Name": "ABC Manufacturing",
+    "ContactInformation": {
+      "Email": "contact@abcmanufacturing.com",
+      "Phone": "+1234567890",
+      "Address": "123 Main St, City, Country"
+    },
+    "BankAccount": {
+      "AccountNumber": "12345678",
+      "BankName": "XYZ Bank",
+      "RoutingNumber": "98765432",
+      "AccountHolderName": "ABC Manufacturing"
+    },
+    "ProductsManufactured": [
+      {
+        "BookID": "book1_id",
+        "BookTitle": "Book 1"
+      },
+      {
+        "BookID": "book2_id",
+        "BookTitle": "Book 2"
+      }
+    ]
+  }
+],
+
+"seller_db":[{
+  "Name": "Madhukar",
+  "ContactInformation": {
+    "Email": "contact@abcmanufacturing.com",
+    "Phone": "+1234567890",
+    "Address": "123 Main St, City, Country"
+  },
+  "BankAccount": {
+    "AccountNumber": "12345678",
+    "BankBalance":10000,
+    "Transcations":[]
+  },
+  "Productssold": [
+    {
+      
+      "Item": "Aeroplane Wheel",
+      "Price": 10000,
+      "Quantity":2000
+    },
+    {
+      "Item":"Aeroplane Wind Shield",
+      "Price": 10000,
+      "Quantity":2000
+    }
+  ]
+},
+{
+    "Name": "ABC Manufacturing",
+    "ContactInformation": {
+      "Email": "contact@abcmanufacturing.com",
+      "Phone": "+1234567890",
+      "Address": "123 Main St, City, Country"
+    },
+    "BankAccount": {
+      "AccountNumber": "12345678",
+      "BankBalance":10000,
+      "Transcations":[]
+    },
+    "Productssold": [
+      {
+        
+        "Item": "Aeroplane Wheel",
+        "Price": 10000,
+        "Quantity":2000
+      },
+      {
+        "Item":"Aeroplane Wind Shield",
+        "Price": 10000,
+        "Quantity":2000
+      }
+    ]
+  }
+],
+
+"customer_db":[{
+  "Name": "Madhukar",
+  "ContactInformation": {
+    "Email": "madhukar.eppalapelly@GMAIL.COM",
+    "Phone": "+919133759126",
+    "password":"Madhukar@1234",
+    "Address": "",
+    "location":""
+  },
+  "BankAccount": {
+    "AccountNumber": "12345678",
+    "BankBalance": 10000,
+    "Transcations":[]
+    
+  },
+  "Cart": [
+    {
+      "BookID": "book1_id",
+      "BookTitle": "Book 1"
+    },
+    {
+      "BookID": "book2_id",
+      "BookTitle": "Book 2"
+    }
+  ],
+  "PastOrders": [
+    {
+      "BookID": "book1_id",
+      "BookTitle": "Book 1"
+    },
+    {
+      "BookID": "book2_id",
+      "BookTitle": "Book 2"
+    }
+  ],
+  "Orders": [
+    {
+      "BookID": "book1_id",
+      "BookTitle": "Book 1"
+    },
+    {
+      "BookID": "book2_id",
+      "BookTitle": "Book 2"
+    }
+  ]
+}
+]}
