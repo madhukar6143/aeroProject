@@ -32,6 +32,7 @@ customerApp.post("/search-items", async (req, res) => {
 customerApp.post("/items", async (req, res) => {
   try {
     const { sellerId } = req.body
+    console.log(sellerId,"req",req.body);
     const items = await SellerModel.findById(sellerId);
     return res.status(200).json(items.productSold);
   } catch (error) {
