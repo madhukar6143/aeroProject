@@ -42,6 +42,8 @@ customerApp.post("/items", async (req, res) => {
 customerApp.post("/cartItems", async (req, res) => {
   try {
     const { customerId, sellerId } = req.body.myData; // Assuming you send customerId and sellerId in the request body
+    if(customerId===null)
+      return res.send({message:"there is problem please login again"});
     console.log(req.body)
     const customer = await customerModel.findById(customerId);
     if(customer && sellerId===null)
