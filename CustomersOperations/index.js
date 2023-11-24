@@ -44,7 +44,6 @@ customerApp.post("/cartItems", async (req, res) => {
     const { customerId, sellerId } = req.body.myData; // Assuming you send customerId and sellerId in the request body
     console.log(req.body)
     const customer = await customerModel.findById(customerId);
-    console.log(customer)
     if(customer && sellerId===null)
      return res.status(200).json(customer.cart);
         // Find the seller's cart based on sellerId
