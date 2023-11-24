@@ -50,12 +50,12 @@ customerApp.post("/cartItems", async (req, res) => {
      return res.status(200).json(customer.cart);
         // Find the seller's cart based on sellerId
         const sellerCart = customer.cart.find((cart) => cart.sellerId === sellerId);
-
+        const items = []
         if (!sellerCart) {
-          return res.status(404).json({ error: 'Seller cart not found' });
+          return res.json(items);
         }
         // Retrieve the items for the specific seller
-        const items = sellerCart.items;
+         items = sellerCart.items;
     
         return res.status(200).json(items)
   } catch (error) {
